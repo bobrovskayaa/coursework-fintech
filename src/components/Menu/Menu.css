@@ -6,6 +6,7 @@
 }
 
 .menu-row {
+  position: fixed;
   width: 100%;
   float: left;
   padding: 10px;

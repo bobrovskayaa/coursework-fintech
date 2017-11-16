@@ -1,6 +1,6 @@
 .info {
   width: 100%;
-  margin: auto;
+  margin: 60px auto;
   text-align: center;
 }
 
@@ -17,18 +17,4 @@
   width: 500px;
   font-size: 16px;
   margin: 40px auto;
-}
-
-.info-item {
-  display: inline-block;
-  max-width: 200px;
-  width: 100%;
-  padding: 10px 20px;
-  margin: 5px;
-  border: 1px solid;
-  white-space: pre-wrap;
-}
-
-.info-item:after {
-  height: 100%;
 }
