@@ -11,7 +11,7 @@ export default ({ foo }) => (
   </nav>
   <nav class="horizontal-nav right">
     <ul>
-      <li><a href="#" className="nav-item">About us</a></li>
+      <li className="container"><a href="#" className="nav-item">About us</a></li>
       <li><a href="#" className="nav-item">Prices</a></li>
       <li><a href="#" className="nav-item">Demo</a></li>
       <li><a href="#" className="nav-item">Manual</a></li>
