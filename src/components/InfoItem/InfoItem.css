@@ -1,0 +1,22 @@
+.info-item {
+  display: inline-block;
+  max-width: 250px;
+  width: 100%;
+  padding: 20px 30px;
+  margin: 5px;
+  border: 1px solid;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.info-item:after {
+  height: 100%;
+}
+
+.info-subitem {
+  margin: 10px;
+}
+
+.info-img {
+  width: 50px;
+}

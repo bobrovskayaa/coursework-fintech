@@ -5,6 +5,28 @@
   width: 100%;
 }
 
+.form-group {
+  position: relative;
+  z-index: 0;
+  padding-top: 10px;
+}
+
+.contact-label {
+  position: absolute;
+  top: 5px;
+  left: 22px;
+  margin: auto;
+  font-size: 12px;
+  transform: translateY(0);
+  transition: all 0.2s ease-out;
+}
+
+input:placeholder-shown + .contact-label,
+textarea:placeholder-shown + .contact-label {
+  opacity: 0;
+  transform: translateY(1rem);
+}
+
 .contact-input {
   max-width: 600px;
   width: 100%;
@@ -20,8 +42,9 @@
   max-width: 200px;
   border-radius: 20px;
   background-color: transparent;
-  border: 4px solid #000;
+  border: 2px solid #000;
   padding: 10px 20px;
+  margin-top: 15px;
   font-size: 17px;
   text-align: center;
   cursor: pointer;

@@ -1,11 +1,12 @@
 import React from 'react';
+import InfoItem from '../InfoItem/InfoItem'
 
 import './InfoList.css';
 
 export default ({ foo }) => (
   <div>
-    <div className="info-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</div>
-    <div className="info-item">col2</div>
-    <div className="info-item">col3</div>
+    <InfoItem text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.'/>
+    <InfoItem text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.'/>
+    <InfoItem text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.'/>
   </div>
 );

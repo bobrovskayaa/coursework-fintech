@@ -18,9 +18,11 @@ class App extends Component {
         </header>
         <Info header="About us" 
         descr="For companies which develop software to find bugs in the earliest stages of development." 
-        in_type="infolist"/>
-        <Info header="Prices" descr="" in_type="infolist"/>
-        <Info header="Contact us" descr="Please, feel free to contact us." in_type="contact"/>
+        tag="infolist"/>
+        <Info header="Prices" descr="" tag="infolist"/>
+        <Info header="Demo" descr="There will be demo" tag="demo"/>
+        <Info header="Manual" descr="This manual for users whom already have DP program" tag="manual"/>
+        <Info header="Contact us" descr="Please, feel free to contact us." tag="contact"/>
       </div>
     );
   }
