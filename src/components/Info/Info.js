@@ -1,6 +1,6 @@
 import React from 'react';
 import InfoList from '../InfoList/InfoList'
-import Contact from '../Contact/Contact'
+import Form from '../Form/Form'
 import Manual from '../Manual/Manual'
 import Demo from '../Demo/Demo'
 
@@ -11,8 +11,8 @@ export default ({ header, descr, tag }) => {
     switch (tag) {
       case 'infolist':
         return <InfoList />;
-      case 'contact':
-        return <Contact />;
+      case 'form':
+        return <Form />;
       case 'manual':
         return <Manual />;
       case 'demo':

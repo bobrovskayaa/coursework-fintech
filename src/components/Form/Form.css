@@ -1,4 +1,4 @@
-.contact-form {
+.form-body {
   margin: auto;
   text-align: center; 
   max-width: 540px;
@@ -11,7 +11,7 @@
   padding-top: 10px;
 }
 
-.contact-label {
+.form-label {
   position: absolute;
   top: 5px;
   left: 22px;
@@ -21,13 +21,13 @@
   transition: all 0.2s ease-out;
 }
 
-input:placeholder-shown + .contact-label,
-textarea:placeholder-shown + .contact-label {
+input:placeholder-shown + .form-label,
+textarea:placeholder-shown + .form-label {
   opacity: 0;
   transform: translateY(1rem);
 }
 
-.contact-input {
+.form-input {
   max-width: 600px;
   width: 100%;
   border-radius: 20px;
@@ -37,7 +37,7 @@ textarea:placeholder-shown + .contact-label {
   outline: none;
 }
 
-.contact-button {
+.form-button {
   width: 100%;
   max-width: 200px;
   border-radius: 20px;
@@ -48,4 +48,11 @@ textarea:placeholder-shown + .contact-label {
   font-size: 17px;
   text-align: center;
   cursor: pointer;
+  transition: all 1s cubic-bezier(.2, 0, 0, 1);
+  transform-origin: bottom center;
+}
+
+.form-button:hover {
+  color: #fff;
+  background-color: #000;
 }

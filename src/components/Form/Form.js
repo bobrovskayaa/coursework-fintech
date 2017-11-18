@@ -1,34 +1,34 @@
 import React from 'react';
 
-import './Contact.css';
+import './Form.css';
 
 export default ({ foo }) => (
-  <form className="contact-form">
+  <form className="form-body">
     <div className="form-group">
       <input type="text" id="dynamic-label-input" 
               placeholder="Name"
-              className="contact-input" />
-      <label for="dynamic-label-input" className="contact-label">Name</label>
+              className="form-input" />
+      <label for="dynamic-label-input" className="form-label">Name</label>
     </div>
     <div className="form-group">
       <input type="text" id="dynamic-label-input" 
               placeholder="E-mail"
-              className="contact-input" />
-      <label for="dynamic-label-input" className="contact-label">E-mail</label>
+              className="form-input" />
+      <label for="dynamic-label-input" className="form-label">E-mail</label>
     </div>
     <div className="form-group">
       <input type="text" id="dynamic-label-input" 
               placeholder="Theme"
-              className="contact-input" />
-      <label for="dynamic-label-input" className="contact-label">Theme</label>
+              className="form-input" />
+      <label for="dynamic-label-input" className="form-label">Theme</label>
     </div>
     <div className="form-group">
       <textarea id="dynamic-label-input" 
               placeholder="Message"
-              className="contact-input" />
-      <label for="dynamic-label-input" className="contact-label">Message</label>
+              className="form-input" />
+      <label for="dynamic-label-input" className="form-label">Message</label>
     </div>
-    <button className="contact-button" type="submit" required>
+    <button className="form-button" type="submit" required>
       Отправить
     </button>
   </form>

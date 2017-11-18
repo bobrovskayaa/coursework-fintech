@@ -9,7 +9,7 @@ export default ({ text }) => (
             <img src={label} alt='картинка' className='info-img'/>
         </div>
         <div className="info-subitem">
-            Заголовок
+            <h3>Заголовок</h3>
         </div>
         <div className="info-subitem">
             {text}

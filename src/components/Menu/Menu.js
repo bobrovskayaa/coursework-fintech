@@ -2,21 +2,25 @@ import React from 'react';
 
 import './Menu.css';
 
-export default ({ foo }) => (
-<div className="menu-row">
-  <nav className="horizontal-nav left">
-    <ul>
-      <li><a href="#" className="nav-item">Defect Prediction</a></li>
-    </ul>
-  </nav>
-  <nav class="horizontal-nav right">
-    <ul>
-      <li className="container"><a href="#" className="nav-item">About us</a></li>
-      <li><a href="#" className="nav-item">Prices</a></li>
-      <li><a href="#" className="nav-item">Demo</a></li>
-      <li><a href="#" className="nav-item">Manual</a></li>
-      <li><a href="#" className="nav-item">Contact us</a></li>
-    </ul>
-  </nav>
-</div>
-);
+export default ({ funcChange }) => {
+  return (
+    <div className="menu-row">
+      <nav className="horizontal-nav left">
+        <ul>
+          <li>
+            <div className="nav-item" onClick={()=> funcChange('menu')}>Defect Prediction</div>
+            </li>
+        </ul>
+      </nav>
+      <nav class="horizontal-nav right">
+        <ul>
+          <li><div className="nav-item" onClick={()=> funcChange('about')}>About us</div></li>
+          <li><div className="nav-item" onClick={()=> funcChange('prices')}>Prices</div></li>
+          <li><div className="nav-item" onClick={()=> funcChange('demo')}>Demo</div></li>
+          <li><div className="nav-item" onClick={()=> funcChange('manual')}>Manual</div></li>
+          <li><div className="nav-item" onClick={()=> funcChange('form')}>Contact us</div></li>
+        </ul>
+      </nav>
+    </div>
+    );
+}
