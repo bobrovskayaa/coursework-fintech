@@ -21,6 +21,10 @@
   transition: all 0.2s ease-out;
 }
 
+textarea {
+  height: 230px;
+}
+
 input:placeholder-shown + .form-label,
 textarea:placeholder-shown + .form-label {
   opacity: 0;
