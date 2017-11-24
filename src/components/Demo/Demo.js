@@ -4,8 +4,8 @@ import './Demo.css';
 
 export default ({ foo }) => (
 <div>
-  <div class="demo-item"> 
-    <div class="demo-subitem"> 
+  <div className="demo-item"> 
+    <div className="demo-subitem"> 
       <button className="demo-button" type="submit" required>
         1. Choose the file
       </button>
@@ -16,7 +16,7 @@ export default ({ foo }) => (
         3. Wait results
       </button>
     </div>
-    <div class="demo-subitem"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+    <div className="demo-subitem"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
     </div>
   </div>
 </div>
