@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button/Button'
 
 import './Form.css';
 
@@ -28,8 +29,9 @@ export default ({ foo }) => (
               className="form-input" />
       <label for="dynamic-label-input" className="form-label" name="mess">Message</label>
     </div>
-    <button className="form-button" type="submit" required>
+    {/* <button className="form-button" type="submit" required>
       Отправить
-    </button>
+    </button> */}
+    <Button text="Отправить" style="form-button" />
   </form>
 );

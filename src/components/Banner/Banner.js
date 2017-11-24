@@ -1,6 +1,7 @@
 import React from 'react';
+import Button from '../Button/Button'
 
-import './Banner.css';
+import './Banner.css'
 
 export default ({ funcChange }) => (
   <div className="banner">
@@ -10,8 +11,6 @@ export default ({ funcChange }) => (
   <div className="banner-text-small">
     Safe your releases.
   </div>
-  <div className="banner-button" onClick={()=> funcChange('form')}>
-    Contact us
-  </div>
+  <Button text="Contact us" onClick={()=> funcChange('form')} style="banner-button"/>
 </div> 
 );
