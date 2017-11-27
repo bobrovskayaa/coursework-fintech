@@ -1,6 +1,6 @@
 .info-item {
   display: inline-block;
-  max-width: 250px;
+  max-width: 280px;
   width: 100%;
   padding: 20px 30px;
   margin: 5px;
@@ -17,10 +17,14 @@
   margin: 10px;
 }
 
+.info-text {
+  height: 200px;
+  overflow: hidden;
+}
+
 .info-img {
   width: 50px;
 }
-
 
 .info-link, .info-link:visited {
   color: #000;

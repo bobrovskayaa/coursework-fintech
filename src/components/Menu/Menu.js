@@ -14,7 +14,6 @@ export default ({ funcChange }) => {
       <nav className="horizontal-nav right">
         <ul>
           <li><Button text="About us" onClick={()=> funcChange('about')} style="nav-item"/></li>
-          <li><Button text="Demo" onClick={()=> funcChange('demo')} style="nav-item"/></li>
           <li><Button text="Manual" onClick={()=> funcChange('manual')} style="nav-item"/></li>
           <li><Button text="Contact us" onClick={()=> funcChange('form')} style="nav-item"/></li>
           <li><Button text="Log in" style="nav-item"/></li>

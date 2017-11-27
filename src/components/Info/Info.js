@@ -8,9 +8,9 @@ export default ({ foo }) => (
     descr="For companies which develop software to find bugs in the earliest stages of development." 
     tag="about">
       <div>
-        <InfoItem text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.'/>
-        <InfoItem text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.'/>
-        <InfoItem text='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.'/>
+        <InfoItem id='0'/>
+        <InfoItem id='1'/>
+        <InfoItem id='2'/>
       </div>
   </Wrapper>
 );
