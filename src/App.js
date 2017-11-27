@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Menu from './components/Menu/Menu'
-import Banner from './components/Banner/Banner'
-import Infolist from './components/InfoList/InfoList'
-import Demo from './components/Demo/Demo'
-import Manual from './components/Manual/Manual'
-import Form from './components/Form/Form'
+import Home from './pages/Home'
+import About from './pages/About'
 
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom';
+
 import './App.css';
 
 class App extends Component {
@@ -20,19 +20,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div id="menu">
-          <Menu funcChange={this.handleMenu} />
+      <Router>
+        <div>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/about' component={About} />
         </div>
-        <Banner funcChange={this.handleMenu}/>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
-        <Infolist />
-        <Demo />
-        <Manual />
-        <Form />
-      </div>
+      </Router>
     );
   }
 }

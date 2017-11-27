@@ -5,12 +5,14 @@ import './Banner.css'
 
 export default ({ funcChange }) => (
   <div className="banner">
-  <div className="banner-text-big">
-    Welcome to <br />Sybil
+    <div style={{ margin: '150px auto 80px' }}>
+      <div className="banner-text-big">
+        Welcome to Sybil
+      </div>
+      <div className="banner-text-small">
+        Safe your releases.
+      </div>
+      <Button text="Contact us" onClick={()=> funcChange('form')} style="banner-button"/>
   </div>
-  <div className="banner-text-small">
-    Safe your releases.
-  </div>
-  <Button text="Contact us" onClick={()=> funcChange('form')} style="banner-button"/>
 </div> 
 );

@@ -1,5 +1,10 @@
 import React from 'react';
+import Button from '../Button/Button'
 import label from './label.png';
+
+import {
+    NavLink
+  } from 'react-router-dom';
 
 import './InfoItem.css';
 
@@ -14,5 +19,8 @@ export default ({ text }) => (
         <div className="info-subitem">
             {text}
         </div>
+        <NavLink to='/about' className='Link' activeClassName='Link--active'>
+          <Button text="Подробней" style="form-button" />
+        </NavLink>
     </div>
 );
