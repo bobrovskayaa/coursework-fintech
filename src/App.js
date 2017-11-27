@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Menu from './components/Menu/Menu'
 import Banner from './components/Banner/Banner'
-import Info from './components/Info/Info'
+import Infolist from './components/InfoList/InfoList'
+import Demo from './components/Demo/Demo'
+import Manual from './components/Manual/Manual'
 import Form from './components/Form/Form'
 
 import logo from './logo.svg';
@@ -26,24 +28,10 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <div id="about">
-          <Info header="About us" 
-            descr="For companies which develop software to find bugs in the earliest stages of development." 
-            tag="infolist"/>
-        </div>
-        <div id="prices">
-          <Info header="Prices" descr="" tag="infolist"/>
-        </div>
-        <div id="demo">
-          <Info header="Demo" descr="There will be demo" tag="demo"/>
-        </div>
-        <div id="manual">
-          <Info header="Manual" descr="This manual for users whom already have DP program" 
-            tag="manual"/>
-        </div>
-        <div id="form">
-          <Info header="Contact us" descr="Please, feel free to contact us." tag="form"/>
-        </div>
+        <Infolist />
+        <Demo />
+        <Manual />
+        <Form />
       </div>
     );
   }

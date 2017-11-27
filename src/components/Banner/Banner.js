@@ -6,7 +6,7 @@ import './Banner.css'
 export default ({ funcChange }) => (
   <div className="banner">
   <div className="banner-text-big">
-    Welcome to <br />Defect Prediction
+    Welcome to <br />Sybil
   </div>
   <div className="banner-text-small">
     Safe your releases.
