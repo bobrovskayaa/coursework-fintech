@@ -17,6 +17,7 @@ export default ({ funcChange }) => {
           <li><Button text="Demo" onClick={()=> funcChange('demo')} style="nav-item"/></li>
           <li><Button text="Manual" onClick={()=> funcChange('manual')} style="nav-item"/></li>
           <li><Button text="Contact us" onClick={()=> funcChange('form')} style="nav-item"/></li>
+          <li><Button text="Log in" style="nav-item"/></li>
         </ul>
       </nav>
     </div>

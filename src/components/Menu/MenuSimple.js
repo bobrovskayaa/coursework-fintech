@@ -13,7 +13,7 @@ export default ({ }) => {
       <nav className="horizontal-nav left">
         <ul>
           <li>
-            <NavLink to='/' className='Link' activeClassName='Link--active'>
+            <NavLink to='/'>
               <Button text="Home" style="nav-item"/>
             </NavLink>
           </li>

@@ -8,6 +8,11 @@ import {
 
 import './InfoItem.css';
 
+const infoItemValue = 
+    [{},
+    {},
+    {}];
+
 export default ({ text }) => (
     <div className="info-item">
         <div className="info-subitem">
@@ -19,7 +24,7 @@ export default ({ text }) => (
         <div className="info-subitem">
             {text}
         </div>
-        <NavLink to='/about' className='Link' activeClassName='Link--active'>
+        <NavLink to='/about' className='info-link'>
           <Button text="Подробней" style="form-button" />
         </NavLink>
     </div>

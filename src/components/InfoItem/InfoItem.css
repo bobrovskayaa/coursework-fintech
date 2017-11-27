@@ -20,3 +20,9 @@
 .info-img {
   width: 50px;
 }
+
+
+.info-link, .info-link:visited {
+  color: #000;
+  text-decoration: none;
+}

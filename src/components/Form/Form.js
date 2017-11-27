@@ -6,9 +6,11 @@ import FormFieldBig from './FormField/FormFieldBig'
 
 import './Form.css';
 
+const descr = "Have questions? Want to order? Please, feel free to contact us.";
+
 export default ({ foo }) => (
   <Wrapper
-    header="Contact us" descr="Please, feel free to contact us." tag="form">
+    header="Contact us" descr={descr} tag="form">
       <form className="form-body" method="post" action="mail.php">
         <FormField text="Name" />
         <FormField text="Mail" />
