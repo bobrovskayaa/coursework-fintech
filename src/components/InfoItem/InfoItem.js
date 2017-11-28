@@ -30,9 +30,7 @@ export default ({ id }) => {
         <div className="info-subitem info-text">
             {infoItemValue[id].text}
         </div>
-        <NavLink to='/about' className='info-link'>
-          <Button text="Подробней" style="form-button" />
-        </NavLink>
+        <Button text="Подробней" style="form-button" />
     </div>
     )
 }
