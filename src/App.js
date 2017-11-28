@@ -10,14 +10,7 @@ import {
 import './App.css';
 
 class App extends Component {
-
-  handleMenu = (tag) => {
-    const element = document.getElementById(tag);
-    
-    element.scrollIntoView(true);
-    window.scrollBy(0,-40);
-  };
-
+  
   render() {
     return (
       <Router>

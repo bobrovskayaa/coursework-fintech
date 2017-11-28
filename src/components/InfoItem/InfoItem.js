@@ -18,7 +18,7 @@ const infoItemValue =
         text: "Нашими клиентами являются компании, разрабатывающие ПО и отдельные команды разработчиков. Мы ориентируемся на клиентов, которые уже используют автоматизированные решения для обеспечения качества кода.",
         img: 'images/icon3.png'}];
 
-export default ({ id }) => {
+export default ({ id, onClick }) => {
     return (
     <div className="info-item">
         <div className="info-subitem">
@@ -30,7 +30,7 @@ export default ({ id }) => {
         <div className="info-subitem info-text">
             {infoItemValue[id].text}
         </div>
-        <Button text="Подробней" style="form-button" />
+        <Button text="Подробней" onClick={onClick} style="form-button" />
     </div>
     )
 }

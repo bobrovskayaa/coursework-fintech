@@ -1,5 +1,5 @@
 .wrapper {
-  max-width: 1000px;
+  max-width: 930px;
   width: 100%;
   overflow: hidden;
   margin: auto;
@@ -27,7 +27,6 @@
   padding: 40px;
   border: 1px solid;
   border-radius: 20px;
-  width: 60%;
   background: #fff;
 }
 
