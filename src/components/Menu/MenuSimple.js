@@ -13,8 +13,8 @@ export default ({ }) => {
       <nav className="horizontal-nav left">
         <ul>
           <li>
-            <NavLink to='/'>
-              <Button text="Home" style="nav-left-item"/>
+            <NavLink to='/' className='nav-item'  style={{ float: 'left' }}>
+              <Button text="Home"/>
             </NavLink>
           </li>
         </ul>

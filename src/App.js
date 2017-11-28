@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Home from './pages/Home'
-import About from './pages/About'
+import Login from './pages/Login'
 
 import {
   BrowserRouter as Router,
@@ -16,7 +16,7 @@ class App extends Component {
       <Router>
         <div>
           <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={About} />
+          <Route exact path='/login' component={Login} />
         </div>
       </Router>
     );

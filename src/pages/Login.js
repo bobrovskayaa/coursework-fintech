@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
 import MenuSimple from '../components/Menu/MenuSimple'
 import WrapperAbout from '../components/Wrapper/WrapperAbout'
+import Enter from '../components/Enter/Enter'
 
-class About extends Component {
+class Login extends Component {
 
   render() {
-    window.scroll(0,0);
     return (
-      <div style={{background: '#222'}}>
+      <div className='page-grey'>
         <MenuSimple />
-        <div style={{ paddingTop: '30px' }}></div>
-
+        <Enter/>
       </div>
     );
   }
 }
 
-export default About;
+export default Login;

@@ -11,7 +11,7 @@ const descr = "Have questions? Want to order? Please, feel free to contact us.";
 export default ({ foo }) => (
   <Wrapper
     header="Contact us" descr={descr} tag="form">
-      <form className="form-body" method="post" action="mail.php">
+      <form className="form-body">
         <FormField text="Name" />
         <FormField text="Mail" />
         <FormField text="Theme" />
