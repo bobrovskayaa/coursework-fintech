@@ -15,7 +15,7 @@ class App extends Component {
     const element = document.getElementById(tag);
     
     element.scrollIntoView(true);
-    window.scrollBy(0,-80);
+    window.scrollBy(0,-40);
   };
 
   render() {

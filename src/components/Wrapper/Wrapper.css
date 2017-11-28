@@ -4,6 +4,7 @@
   overflow: hidden;
   margin: auto;
   text-align: center;
+  margin-top: 20px;
 }
 
 .wrapper-text-big {
@@ -12,11 +13,32 @@
   font-size: 50px;
   font-weight: 100;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .wrapper-text-small {
   width: 500px;
   font-size: 16px;
+  margin: 30px auto;
+}
+
+.wrapper-about-item {
   margin: 40px auto;
+  padding: 40px;
+  border: 1px solid;
+  border-radius: 20px;
+  width: 60%;
+  background: #fff;
+}
+
+.wrapper-about-header {
+  font-size: 30px;
+  font-weight: 100;
+  margin: 0px auto 20px;
+  text-align: center;
+}
+
+.wrapper-about-text {
+  text-align: left;
+  text-indent: 1.5em;
 }

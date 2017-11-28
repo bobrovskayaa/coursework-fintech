@@ -9,12 +9,12 @@ import {
 
 export default ({ }) => {
   return (
-    <div className="menu-row">
+    <div className="menu-left">
       <nav className="horizontal-nav left">
         <ul>
           <li>
             <NavLink to='/'>
-              <Button text="Home" style="nav-item"/>
+              <Button text="Home" style="nav-left-item"/>
             </NavLink>
           </li>
         </ul>
