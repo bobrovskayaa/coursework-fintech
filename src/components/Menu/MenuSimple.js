@@ -4,8 +4,8 @@ import Button from '../Button/Button'
 import './Menu.css';
 
 import {
-  NavLink
-} from 'react-router-dom';
+  Link
+} from 'react-router';
 
 export default ({ foo }) => {
   return (
@@ -13,9 +13,9 @@ export default ({ foo }) => {
       <nav className="horizontal-nav left">
         <ul>
           <li>
-            <NavLink to='/' className='nav-item'  style={{ float: 'left' }}>
+            <Link to='/' className='nav-item'  style={{ float: 'left' }}>
               <Button text="Home"/>
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </nav>

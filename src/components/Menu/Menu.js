@@ -2,8 +2,8 @@ import React from 'react';
 import Button from '../Button/Button'
 
 import {
-  NavLink
-} from 'react-router-dom';
+  Link
+} from 'react-router';
 
 import './Menu.css';
 
@@ -21,9 +21,9 @@ export default ({ funcChange }) => {
           <li><Button text="Manual" onClick={()=> funcChange('manual')} style="nav-item"/></li>
           <li><Button text="Contact us" onClick={()=> funcChange('form')} style="nav-item"/></li>
           <li>
-            <NavLink to='/login' className='nav-item'  style={{ float: 'right' }}>
+            <Link to='/login' className='nav-item'  style={{ float: 'right' }}>
               <Button text="Log in"/>
-            </NavLink>
+            </Link>
           </li>
         </ul>
       </nav>

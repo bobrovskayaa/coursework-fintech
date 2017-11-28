@@ -1,32 +1,56 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
 import FormField from '../Form/FormField/FormField'
 import Button from '../Button/Button'
+import R from 'ramda'
 
 import './Enter.css'
+
+import {
+  getData
+} from '../../actions';
 
 class Enter extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      login: '',
-      pass: ''
+      email: '',
+      password: '',
+      input: '' //потом сделать редьюсер, экшн etc
     };
     this.handleLoginChange = this.handleLoginChange.bind(this);
     this.handlePassChange = this.handlePassChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleSubmitLogIn = this.handleSubmitLogIn.bind(this);
+    this.handleSubmitRegister = this.handleSubmitRegister.bind(this);
+    this.handleToken = this.handleToken.bind(this);
   }
 
-  handleSubmit(event) {
+  componentWillMount() {
+    this.props.getData();
+  }
+
+  handleToken(event) {
     event.preventDefault();
-    console.log('form submitted and login is', this.state.login, ' password is', this.state.pass);
+    console.log(this.props.data);
+    this.setState(R.merge(this.state, {input: this.props.data}));
+  }
+
+  handleSubmitLogIn(event) {
+    event.preventDefault();
+    console.log('form submitted and login is', this.state.email, ' password is', this.state.password);
+  }
+
+  handleSubmitRegister(event) {
+    event.preventDefault();
+    console.log('form submitted and login is', this.state.email, ' password is', this.state.password);
   }
   
   handleLoginChange(event) {
-    this.setState({login: event.target.value});
+    this.setState({email: event.target.value});
   }
 
   handlePassChange(event) {
-    this.setState({pass: event.target.value});
+    this.setState({password: event.target.value});
   }
   
   render() {
@@ -35,21 +59,23 @@ class Enter extends Component {
         <div style={{ margin: '150px auto 80px' }}>
           <div className='enter-block'>
             <form className="enter-body">
-              <FormField text="Login" color='white'
-                value={this.state.login} 
+              <FormField text="Email" color='white'
+                value={this.state.email}
                 onChange={this.handleLoginChange} />
               <FormField text="Password" color='white'
-                value={this.state.pass} 
+                value={this.state.password} 
                 onChange={this.handlePassChange} />
-              <Button text="Log in" style="banner-button" onClick={this.handleSubmit}/>
+              <Button text="Log in" style="banner-button" onClick={this.handleSubmitLogIn}/>
+              <Button text="Register" style="banner-button" onClick={this.handleSubmitRegister}/>
             </form>
           </div>
           <div className='enter-block'>
             <p className='text-small'>
               Вы сможете обновить токен после входа в систему
             </p>
-            <input type="text" placeholder='Токен' className="form-input-white enter-input" readOnly="readonly" />
-            <Button text="Обновить токен" style="banner-button" />
+            <input type="text" placeholder='Токен' id='token' value={this.state.input}
+              className="form-input-white enter-input" readOnly="readonly" />
+            <Button text="Обновить токен" style="banner-button" onClick={this.handleToken}/>
           </div>
         </div>
       </div> 
@@ -57,4 +83,14 @@ class Enter extends Component {
   }
 }
 
-export default Enter;
+const mapStateToProps = state => {
+  return {
+    data: state.login.disclaimer
+  }
+};
+
+const mapDispatchToProps = {
+  getData
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Enter);
