@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import InfoItem from '../InfoItem/InfoItem'
 import Wrapper from '../Wrapper/Wrapper'
 import WrapperAbout from '../Wrapper/WrapperAbout'
-import Button from '../Button/Button'
 
 import './Info.css'
 

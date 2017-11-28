@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import MenuSimple from '../components/Menu/MenuSimple'
-import WrapperAbout from '../components/Wrapper/WrapperAbout'
 import Enter from '../components/Enter/Enter'
 
 class Login extends Component {

@@ -7,7 +7,7 @@ import {
   NavLink
 } from 'react-router-dom';
 
-export default ({ }) => {
+export default ({ foo }) => {
   return (
     <div className="menu-left">
       <nav className="horizontal-nav left">

@@ -12,11 +12,11 @@ export default ({ foo }) => (
   <Wrapper
     header="Contact us" descr={descr} tag="form">
       <form className="form-body">
-        <FormField text="Name" />
-        <FormField text="Mail" />
-        <FormField text="Theme" />
-        <FormFieldBig text="Message" />
-        <Button text="Отправить" style="form-button" />
+        <FormField text="Name" color='black' />
+        <FormField text="Mail" color='black' />
+        <FormField text="Theme" color='black' />
+        <FormFieldBig text="Message" color='black' />
+        <Button text="Отправить" style="form-button" color='black' />
       </form>
   </Wrapper>
 );
