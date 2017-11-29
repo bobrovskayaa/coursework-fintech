@@ -14,7 +14,7 @@ export default ({ foo }) => {
         <ul>
           <li>
             <Link to='/' className='nav-item'  style={{ float: 'left' }}>
-              <Button text="Home"/>
+              <Button className='nav-item' text="Home"/>
             </Link>
           </li>
         </ul>

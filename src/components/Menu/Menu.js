@@ -22,7 +22,7 @@ export default ({ funcChange }) => {
           <li><Button text="Contact us" onClick={()=> funcChange('form')} style="nav-item"/></li>
           <li>
             <Link to='/login' className='nav-item'  style={{ float: 'right' }}>
-              <Button text="Log in"/>
+              <Button className='nav-item' text="Log in"/>
             </Link>
           </li>
         </ul>
