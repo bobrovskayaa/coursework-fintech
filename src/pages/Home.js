@@ -5,8 +5,6 @@ import Info from '../components/Info/Info'
 import Manual from '../components/Manual/Manual'
 import Form from '../components/Form/Form'
 
-import '../App.css';
-
 class Home extends Component {
 
   handleMenu = (tag) => {
