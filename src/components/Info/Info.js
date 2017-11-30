@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import InfoItem from '../InfoItem/InfoItem'
+import InfoItem from './InfoItem/InfoItem'
 import Wrapper from '../Wrapper/Wrapper'
 import WrapperAbout from '../Wrapper/WrapperAbout'
 
