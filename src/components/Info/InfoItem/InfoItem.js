@@ -26,7 +26,7 @@ export default ({ id, onClick }) => {
         <div className="info-subitem info-text">
             {infoItemValue[id].text}
         </div>
-        <Button text="Подробней" onClick={onClick} style="form-button" />
+        <Button text="Подробней" onClick={onClick} btnStyle="form-button" />
     </div>
     )
 }

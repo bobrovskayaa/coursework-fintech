@@ -16,7 +16,7 @@ export default ({ foo }) => (
         <FormField text="Mail" color='black' />
         <FormField text="Theme" color='black' />
         <FormFieldBig text="Message" color='black' />
-        <Button text="Отправить" style="form-button" color='black' />
+        <Button text="Отправить" btnStyle="form-button" color='black' />
       </form>
   </Wrapper>
 );

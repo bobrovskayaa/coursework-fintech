@@ -32,7 +32,7 @@ export default ({ foo }) => (
             <br />
             <br />
             <p style={{ textAlign: 'center' }}>
-              <img src='images/manual1.png' style={{ width: '100%' }}/>
+              <img src='images/manual1.png' alt='screen of example' style={{ width: '100%' }}/>
             </p>
           </li>
         </ol>
@@ -42,12 +42,12 @@ export default ({ foo }) => (
           <br />
           <br />
           <p style={{ textAlign: 'center' }}>
-            <img src='images/manual2.png' style={{ width: '100%' }}/>
+            <img src='images/manual2.png' alt='screen of example' style={{ width: '100%' }}/>
           </p>
         </WrapperManual>
         <WrapperManual header='Изменение .gitlab-ci.yml'>
-          Предположим, что у вашего проекта не было .gitlab-ci.yml Тогда вам следует создать этот файл в корне вашего проекта и скопировать 
-          <a href='https://pastebin.com/JsqYrsyg'> туда</a>
+          Предположим, что у вашего проекта не было .gitlab-ci.yml Тогда вам следует создать этот файл в корне вашего проекта и 
+          скопировать в него код <a href='https://pastebin.com/JsqYrsyg' style={{ color: '#000', borderBottom: '1px solid', textDecoration: 'none'}}>отсюда</a>
         </WrapperManual>
       </div>
   </Wrapper>

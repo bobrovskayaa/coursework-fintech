@@ -65,8 +65,8 @@ class Enter extends Component {
               <FormField text="Password" color='white'
                 value={this.state.password} 
                 onChange={this.handlePassChange} />
-              <Button text="Log in" style="banner-button" onClick={this.handleSubmitLogIn}/>
-              <Button text="Register" style="banner-button" onClick={this.handleSubmitRegister}/>
+              <Button text="Log in" btnStyle="banner-button" onClick={this.handleSubmitLogIn}/>
+              <Button text="Register" btnStyle="banner-button" onClick={this.handleSubmitRegister}/>
             </form>
           </div>
           <div className='enter-block'>
@@ -75,7 +75,7 @@ class Enter extends Component {
             </p>
             <input type="text" placeholder='Токен' id='token' value={this.state.input}
               className="form-input-white enter-input" readOnly="readonly" />
-            <Button text="Обновить токен" style="banner-button" onClick={this.handleToken}/>
+            <Button text="Обновить токен" btnStyle="banner-button" onClick={this.handleToken}/>
           </div>
         </div>
       </div> 
