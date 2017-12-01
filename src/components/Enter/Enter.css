@@ -12,6 +12,7 @@
 }
 
 .enter-input {
+  min-height: 130px;
   max-width: 400px;
   width: 100%;
 }

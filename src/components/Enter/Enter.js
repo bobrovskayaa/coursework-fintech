@@ -20,17 +20,11 @@ class Enter extends Component {
     this.handleLoginChange = this.handleLoginChange.bind(this);
     this.handlePassChange = this.handlePassChange.bind(this);
     this.handleSubmitLogIn = this.handleSubmitLogIn.bind(this);
-    this.handleSubmitRegister = this.handleSubmitRegister.bind(this);
     this.handleLoginChange = this.handleLoginChange.bind(this);
     this.handlePassChange = this.handlePassChange.bind(this);
   }
 
   handleSubmitLogIn(event) {
-    event.preventDefault();
-    this.props.postLogin(this.state);
-  }
-
-  handleSubmitRegister(event) {
     event.preventDefault();
     this.props.postLogin(this.state);
   }
@@ -56,14 +50,13 @@ class Enter extends Component {
                 value={this.state.password} 
                 onChange={this.handlePassChange} />
               <Button text="Log in" btnStyle="banner-button" onClick={this.handleSubmitLogIn}/>
-              <Button text="Register" btnStyle="banner-button" onClick={this.handleSubmitRegister}/>
             </form>
           </div>
           <div className='enter-block'>
             <p className='text-small'>
-              Вы сможете обновить токен после входа в систему
+              Токен обновится через некоторое время после входа в систему
             </p>
-            <input type="text" placeholder='Токен' id='token' value={this.props.token}
+            <textarea type="text" placeholder='Токен' id='token' value={this.props.token}
               className="form-input-white enter-input" readOnly="readonly" />
           </div>
         </div>

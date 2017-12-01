@@ -32,7 +32,7 @@
   transition: all 0.2s ease-out;
 }
 
-textarea {
+.textarea-big {
   height: 230px;
 }
 
