@@ -1,11 +1,13 @@
-import { GET_SUCCESS } from '../actions/actionTypes';
+import { 
+  POST_LOGIN_SUCCESS
+ } from '../actions/actionTypes';
 
-const initialState = {diclaimer:''};
+const initialState = '';
 
 export default (state = initialState, {type, payload}) => {
   switch (type) {
-    case GET_SUCCESS:
-      return payload;
+    case POST_LOGIN_SUCCESS:
+      return payload.token;
     default:
       return state;
   }

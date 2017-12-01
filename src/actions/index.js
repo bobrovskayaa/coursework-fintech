@@ -6,13 +6,37 @@ import {
     POST_START,
     POST_SUCCESS,
     POST_FAILURE,
-    SET_ID
+    SET_ID,
+    CHANGE_LOGIN,
+    CHANGE_PASSWORD,
+    POST_LOGIN_START,
+    POST_LOGIN_SUCCESS,
+    POST_LOGIN_FAILURE
 } from './actionTypes';
 
 import {
     getDataApi,
-    postDataApi
+    postDataApi,
+    postLoginApi
 } from '../api';
+
+export const postLogin = (data) => async dispatch => {
+    dispatch({type: POST_LOGIN_START});
+
+    try {
+        const answerData = await postLoginApi(data);
+        dispatch({
+            type: POST_LOGIN_SUCCESS,
+            payload: answerData
+        });
+    } catch (err) {
+        dispatch({
+            type: POST_LOGIN_FAILURE,
+            payload: err,
+            error: true
+        });
+    }
+};
 
 const postSuccess = (data) => {
    return {

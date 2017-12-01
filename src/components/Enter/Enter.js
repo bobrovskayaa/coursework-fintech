@@ -7,7 +7,7 @@ import R from 'ramda'
 import './Enter.css'
 
 import {
-  getData
+  postLogin
 } from '../../actions';
 
 class Enter extends Component {
@@ -15,40 +15,24 @@ class Enter extends Component {
     super(props);
     this.state = {
       email: '',
-      password: '',
-      input: '' //потом сделать редьюсер, экшн etc
+      password: ''
     };
     this.handleLoginChange = this.handleLoginChange.bind(this);
     this.handlePassChange = this.handlePassChange.bind(this);
     this.handleSubmitLogIn = this.handleSubmitLogIn.bind(this);
     this.handleSubmitRegister = this.handleSubmitRegister.bind(this);
-    this.handleToken = this.handleToken.bind(this);
-  }
-
-  componentWillMount() {
-    this.props.getData();
-  }
-
-  handleToken(event) {
-    event.preventDefault();
-    console.log(this.props.dataGet);
-    this.setState(R.merge(this.state, {input: this.props.dataGet}));
-  }
-
-  handleLogin(event) {
-    event.preventDefault();
-    console.log(this.props.dataGet);
-    this.setState(R.merge(this.state));
+    this.handleLoginChange = this.handleLoginChange.bind(this);
+    this.handlePassChange = this.handlePassChange.bind(this);
   }
 
   handleSubmitLogIn(event) {
     event.preventDefault();
-    console.log('form submitted and login is', this.state.email, ' password is', this.state.password);
+    this.props.postLogin(this.state);
   }
 
   handleSubmitRegister(event) {
     event.preventDefault();
-    console.log('form submitted and login is', this.state.email, ' password is', this.state.password);
+    this.props.postLogin(this.state);
   }
   
   handleLoginChange(event) {
@@ -79,9 +63,8 @@ class Enter extends Component {
             <p className='text-small'>
               Вы сможете обновить токен после входа в систему
             </p>
-            <input type="text" placeholder='Токен' id='token' value={this.state.input}
+            <input type="text" placeholder='Токен' id='token' value={this.props.token}
               className="form-input-white enter-input" readOnly="readonly" />
-            <Button text="Обновить токен" btnStyle="banner-button" onClick={this.handleToken}/>
           </div>
         </div>
       </div> 
@@ -91,12 +74,12 @@ class Enter extends Component {
 
 const mapStateToProps = state => {
   return {
-    dataGet: state.token.disclaimer
+    token: state.token
   }
 };
 
 const mapDispatchToProps = {
-  getData
+  postLogin
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Enter);
