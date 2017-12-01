@@ -4,3 +4,11 @@
   border: 1px solid;
   border-radius: 20px;
 }
+
+.manual-link,
+.manual-link:hover, 
+.manual-link:focus {
+  color: #000;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}

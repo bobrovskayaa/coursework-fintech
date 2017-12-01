@@ -31,8 +31,14 @@ class Enter extends Component {
 
   handleToken(event) {
     event.preventDefault();
-    console.log(this.props.data);
-    this.setState(R.merge(this.state, {input: this.props.data}));
+    console.log(this.props.dataGet);
+    this.setState(R.merge(this.state, {input: this.props.dataGet}));
+  }
+
+  handleLogin(event) {
+    event.preventDefault();
+    console.log(this.props.dataGet);
+    this.setState(R.merge(this.state));
   }
 
   handleSubmitLogIn(event) {
@@ -85,7 +91,7 @@ class Enter extends Component {
 
 const mapStateToProps = state => {
   return {
-    data: state.login.disclaimer
+    dataGet: state.token.disclaimer
   }
 };
 

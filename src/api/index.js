@@ -6,6 +6,13 @@ export const getDataApi = async (request) => {
 };
 
 export const postDataApi = async (request) => {
+    const URL = ""
+    return fetch('url', {
+        method: 'POST'
+    }).then(res => res.json());
+  };
+
+/*export const postDataApi = async (request) => {
   const URL = '';
   return fetch('url', {
       method: 'POST',
@@ -24,4 +31,4 @@ export const postDataApi = async (request) => {
   }).then(function(data) {
       // ... Делаем что-то с данными.
   });
-};
+};*/

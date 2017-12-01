@@ -5,6 +5,9 @@ import {Link} from 'react-router';
 
 import './Manual.css';
 
+const api_post_ex = 'curl -X POST -H "Content-Type: application/json" -d "{"email":"sample@mail.ru", "password":"pass"}" http://defect-prediction-server.herokuapp.com/auth/register';
+const api_get_ex = '{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUz..."}';
+
 export default ({ foo }) => (
   <Wrapper
     header="Manual" descr="This manual for users whom already have DP program" 
@@ -13,22 +16,34 @@ export default ({ foo }) => (
         <WrapperManual header='Основная последовательность'>
         <ol>
           <li>
-            Зарегистрироваться на сайте, получить токен, сохранить его в Secret variables своего проекта
+            Зарегистрироваться на сайте, получить токен, сохранить его в Secret variables своего проекта  
           </li>
           <li>
             Добавить несколько строк в .gitlab-ci.yml своего проекта
           </li>
           <li>
-            При каждом push'е на сервер в выводе job будет предсказание в формате  название файла : вероятность ошибки
+            При каждом push'е на сервер в выводе job будет предсказание в формате  <code>название файла : вероятность ошибки</code>
           </li>
         </ol>
         </WrapperManual>
         <WrapperManual header='Получение токена'>
         <ol>
-          <li> Зарегистрироваться на сайте через страницу <Link to='/login' style={{ color: '#000', borderBottom: '1px solid'}}>Log in</Link>
+          <li> Зарегистрироваться на сайте через страницу <Link to='/login' className='manual-link'>Log in</Link>
+          <br/>
+            Можно непосредственно воспользоваться API:
+          <br/>
+          <code>
+            {api_post_ex}
+          </code>
+          <br/>
+            И получить ответ в виде:
+          <br/>
+          <code>
+            {api_get_ex}
+          </code>
           </li>
           <li>
-            Сохранить token в secret variables в Settings > CI/CD, назвав переменную TOKEN
+            Сохранить <code>token</code> в secret variables в <strong>Settings > CI/CD</strong>, назвав переменную TOKEN
             <br />
             <br />
             <p style={{ textAlign: 'center' }}>
@@ -38,7 +53,7 @@ export default ({ foo }) => (
         </ol>
         </WrapperManual>
         <WrapperManual header='Сохранение ссылки на образ клиента на DockerHub'>
-          Мы распостраняем клиент как Docker Image. Необходимо добавить адрес Image в в secret variables в Settings > CI/CD, чтобы затем получать к нему доступ из .gitlab-ci.yml
+          Мы распостраняем клиент как Docker Image. Необходимо добавить адрес Image в в secret variables в <strong>Settings > CI/CD</strong>, чтобы затем получать к нему доступ из .gitlab-ci.yml
           <br />
           <br />
           <p style={{ textAlign: 'center' }}>
@@ -47,7 +62,7 @@ export default ({ foo }) => (
         </WrapperManual>
         <WrapperManual header='Изменение .gitlab-ci.yml'>
           Предположим, что у вашего проекта не было .gitlab-ci.yml Тогда вам следует создать этот файл в корне вашего проекта и 
-          скопировать в него код <a href='https://pastebin.com/JsqYrsyg' style={{ color: '#000', borderBottom: '1px solid', textDecoration: 'none'}}>отсюда</a>
+          скопировать в него код <a href='https://pastebin.com/JsqYrsyg' className='manual-link'>с этого источника</a>
         </WrapperManual>
       </div>
   </Wrapper>

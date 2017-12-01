@@ -1,6 +1,6 @@
 import { GET_SUCCESS } from '../actions/actionTypes';
 
-const initialState = {email:'', password:''};
+const initialState = {diclaimer:''};
 
 export default (state = initialState, {type, payload}) => {
   switch (type) {
