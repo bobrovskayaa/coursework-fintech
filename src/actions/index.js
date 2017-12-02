@@ -1,23 +1,15 @@
-import { browserHistory } from 'react-router-redux';
 import {
-    GET_START,
-    GET_SUCCESS,
-    GET_FAILURE,
-    POST_START,
-    POST_SUCCESS,
-    POST_FAILURE,
-    SET_ID,
-    CHANGE_LOGIN,
-    CHANGE_PASSWORD,
     POST_LOGIN_START,
     POST_LOGIN_SUCCESS,
-    POST_LOGIN_FAILURE
+    POST_LOGIN_FAILURE,
+    POST_FORM_START,
+    POST_FORM_SUCCESS,
+    POST_FORM_FAILURE
 } from './actionTypes';
 
 import {
-    getDataApi,
-    postDataApi,
-    postLoginApi
+    postLoginApi,
+    postFormApi
 } from '../api';
 
 export const postLogin = (data) => async dispatch => {
@@ -38,28 +30,20 @@ export const postLogin = (data) => async dispatch => {
     }
 };
 
-const postSuccess = (data) => {
-   return {
-       type: POST_SUCCESS,
-       payload: data
-   };
-};
+export const postForm = (data) => async dispatch => {
+    dispatch({type: POST_FORM_START});
 
-/*export const getData = (request) => async dispatch => {
-    dispatch({type: GET_START});
-    console.log(request);
     try {
-        const data = await getDataApi(request);
+        const answerData = await postFormApi(data);
         dispatch({
-            type: GET_SUCCESS,
-            payload: data
+            type: POST_FORM_SUCCESS,
+            payload: answerData
         });
     } catch (err) {
         dispatch({
-            type: GET_FAILURE,
+            type: POST_FORM_FAILURE,
             payload: err,
             error: true
         });
     }
 };
-*/

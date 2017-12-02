@@ -2,13 +2,10 @@ import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import FormField from '../Form/FormField/FormField'
 import Button from '../Button/Button'
-import R from 'ramda'
 
 import './Enter.css'
 
-import {
-  postLogin
-} from '../../actions';
+import {postLogin} from '../../actions';
 
 class Enter extends Component {
   constructor(props) {
