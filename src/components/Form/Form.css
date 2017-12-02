@@ -33,7 +33,7 @@
 }
 
 .textarea-big {
-  height: 230px;
+  height: 300px;
 }
 
 input:placeholder-shown + .form-label-black,

@@ -1,13 +1,15 @@
 import React from 'react';
 
-export default ({ text, value, onChange, color }) => {
+export default ({ isBig, text, value, onChange, color }) => {
   const labelStyle = (color === 'white' ? 'form-label-white' : 'form-label-black');
-  const inputStyle = (color === 'white' ? 'form-input-white' : 'form-input-black');
+  let inputStyle = (color === 'white' ? 'form-input-white' : 'form-input-black');
+  const Tag = isBig ? 'textarea' : 'input';
+  inputStyle += ' ' + (isBig ? 'textarea-big' : '');
   return (
     <div className="form-group">
-      <input type={text} id="dynamic-label-input" 
+      <Tag type={text} id="dynamic-label-input" 
               placeholder={text}
-              className={inputStyle} 
+              className={inputStyle}
               value={value}
               onChange={onChange}/>
       <label htmlFor="dynamic-label-input" className={labelStyle} name={text}>{text}</label>

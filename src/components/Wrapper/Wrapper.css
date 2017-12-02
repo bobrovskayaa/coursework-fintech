@@ -1,4 +1,4 @@
-.wrapper {
+.wrapper-main-item {
   max-width: 1000px;
   width: 100%;
   overflow: hidden;
@@ -7,7 +7,7 @@
   margin: 30px auto;
 }
 
-.wrapper-text-big {
+.wrapper-main-header {
   width: 100%;
   max-width: 500px;
   font-size: 50px;
@@ -16,7 +16,7 @@
   margin-top: 30px;
 }
 
-.wrapper-text-small {
+.wrapper-main-subtitle {
   width: 500px;
   font-size: 16px;
   margin: 30px auto;

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import InfoItem from './InfoItem/InfoItem'
 import Wrapper from '../Wrapper/Wrapper'
-import WrapperAbout from '../Wrapper/WrapperAbout'
 
 import './Info.css'
 
@@ -35,14 +34,14 @@ class Info extends Component {
       <Wrapper
         header="About us" 
         descr="For companies which develop software to find bugs in the earliest stages of development." 
-        tag="about">
+        tag="about" wrpStyle='main'>
           <div>
             <InfoItem id='0' onClick={()=> this.openBox('box1')}/>
             <InfoItem id='1' onClick={()=> this.openBox('box2')}/>
             <InfoItem id='2' onClick={()=> this.openBox('box3')}/>
           </div>
           <div id='box1' style={{display: 'none'}}>
-            <WrapperAbout header='Проблема'>
+            <Wrapper header='Проблема' wrpStyle='about'>
               <p>
                 Согласно исследованию, проведенному в университете Кембриджа, в среднем разработчики тратят 50% рабочего времени на поиск и исправление ошибок, что стоит всей индустрии в целом 312 миллиардов долларов в год. При этом нельзя просто меньше заботиться об ошибках - даже один дефект способен привести к катастрофическим последствиям (слайды с катастрофами)
               </p>
@@ -55,10 +54,10 @@ class Info extends Component {
               <p>
                 Существует множество инструментов, которые помогают работать с ошибками. Все они либо работают с исходном кодом, как с текстом, либо анализируют ход выполнения программы. Эти подходы позволяют проверить код на наличие типовых ошибок.
               </p>
-            </WrapperAbout>
+            </Wrapper>
           </div>
           <div id='box2' style={{display: 'none'}}>
-            <WrapperAbout header="Особенности Sybil">
+            <Wrapper header="Особенности Sybil" wrpStyle='about'>
               <p>
                 Наша система работает иначе. Обученная на десятках реальных проектов, она “смотрит” на код так, как бы на него смотрел опытный программист и для каждого файла программы рассчитывает вероятность нахождения в нём ошибки. Это позволяет мгновенно локализовать ошибки и оценивать качество кода.
               </p>
@@ -68,10 +67,10 @@ class Info extends Component {
               <p>
                 Оценка качества кода.
               </p>
-            </WrapperAbout>
+            </Wrapper>
           </div>
           <div id='box3' style={{display: 'none'}}>
-            <WrapperAbout header="Для кого и зачем">
+            <Wrapper header="Для кого и зачем" wrpStyle='about'>
             <p>
                 Нашими клиентами являются компании, разрабатывающие ПО и отдельные команды разработчиков. Мы ориентируемся на те компании и команды, которые уже используют автоматизированные решения для обеспечения качества кода.
                 В компаниях - тим лиды, кволити ашуранс инженеры
@@ -96,7 +95,7 @@ class Info extends Component {
                   </li>
                 </ul>
             </p>
-            </WrapperAbout>
+            </Wrapper>
           </div>
       </Wrapper>
     )
