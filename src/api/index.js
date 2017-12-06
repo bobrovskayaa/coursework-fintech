@@ -23,7 +23,7 @@ export const postLoginApi = async (data) => {
 }
 
 export const postFormApi = async (data) => {
-    const URL = '';
+    const URL = 'http://defect-prediction-server.herokuapp.com/feedback/show';
     return fetch(URL, {
         method: 'POST',
         headers: { 'Content-Type': "application/json" },
@@ -33,6 +33,7 @@ export const postFormApi = async (data) => {
         //console.log(response.json());
         // Стоит проверить код ответа.
         if (!response.ok) {
+            console.log('Всё плохо');
             // Сервер вернул код ответа за границами диапазона [200, 299]
             return Promise.reject(new Error(
                 'Response failed: ' + response.status + ' (' + response.statusText + ')'
@@ -40,6 +41,7 @@ export const postFormApi = async (data) => {
         }
 
         // Далее будем использовать только JSON из тела ответа.
+        console.log('Всё прошло упешно');
         return response.json();
     });
 }
