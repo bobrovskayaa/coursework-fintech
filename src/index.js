@@ -25,6 +25,7 @@ ReactDOM.render(
         <Router history={history}>
             <Route path='/' component={Home} />
             <Route path='/login' component={Login} />
+            <Route path='*' component={()=> <span>IS EMPTY</span>} />
         </Router>
     </Provider>,
     document.getElementById('root')
