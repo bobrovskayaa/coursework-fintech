@@ -98,3 +98,24 @@ textarea:placeholder-shown + .form-label-black{
   color: #fff;
   background-color: #000;
 }
+
+.form-group .form-info {
+  display: none;
+}
+
+.form-group input:invalid {
+  border: solid 1px #d0011b;
+}
+
+.form-group input:invalid ~ .form-info {
+  display: block;
+  font-size: 13px;
+  color: #d0011b;
+}
+
+.form-group input.form-input-white:invalid ~ .form-info {
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+

@@ -67,12 +67,12 @@ nav.horizontal-nav ul > li {
   transform-origin: bottom center;
   z-index: -1;
 }
-  
+
 .nav-item:hover {
   text-decoration: none;
   color: #2D2D2D;
 }
-    
+
 .nav-item:hover:after {
   text-decoration: none;
   right: 0;

@@ -13,8 +13,8 @@ export default ({ foo }) => {
       <nav className="horizontal-nav left">
         <ul>
           <li>
-            <Link to='/' className='nav-item'  style={{ float: 'left' }}>
-              <Button className='nav-item' text="Home"/>
+            <Link to='/' style={{ float: 'left' }}>
+              <Button btnStyle='nav-item' text="Home"/>
             </Link>
           </li>
         </ul>
