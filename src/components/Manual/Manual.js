@@ -27,7 +27,7 @@ export default ({ foo }) => (
         </Wrapper>
         <Wrapper header='Получение токена' wrpStyle='manual'>
         <ol>
-          <li> Зарегистрироваться на сайте через страницу <Link to='/login' className='manual-link'>Log in</Link>
+          <li> Зарегистрироваться на сайте через страницу <Link to='/coursework-fintech/build//login' className='manual-link'>Log in</Link>
           <br/>
             Можно непосредственно воспользоваться API:
           <br/>

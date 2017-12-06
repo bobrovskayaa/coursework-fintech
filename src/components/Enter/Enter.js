@@ -23,7 +23,9 @@ class Enter extends Component {
 
   handleSubmitLogIn(event) {
     event.preventDefault();
+    document.getElementById('loader').style.display = 'block';
     this.props.postLogin(this.state);
+    document.getElementById('loader').style.display = 'none';
   }
   
   handleLoginChange(event) {
@@ -55,6 +57,7 @@ class Enter extends Component {
             </p>
             <textarea type="text" placeholder='Токен' id='token' value={this.props.token}
               className="form-input-white enter-input" readOnly="readonly" />
+            <p className='text-small' id='loader' style={{ display: 'none' }}>Loading&hellip;</p>
           </div>
         </div>
       </div> 
