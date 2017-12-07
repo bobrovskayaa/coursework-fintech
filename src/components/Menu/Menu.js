@@ -18,8 +18,8 @@ export default ({ funcChange }) => {
           <li className='extra-li'><Button text="Manual" onClick={()=> funcChange('manual')} btnStyle="nav-item"/></li>
           <li className='extra-li'><Button text="Contact us" onClick={()=> funcChange('form')} btnStyle="nav-item"/></li>
           <li>
-            <Link to='/coursework-fintech/build/login' className='nav-item'  style={{ float: 'right' }}>
-              <Button text="Log in"/>
+            <Link to='/coursework-fintech/build/login' style={{ float: 'right' }}>
+              <Button btnStyle='nav-item' text="Log in"/>
             </Link>
           </li>
         </ul>
