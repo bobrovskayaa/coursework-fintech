@@ -84,6 +84,13 @@ nav.horizontal-nav ul > li {
   z-index: 100;
   position: fixed;
   float: left;
+  width: 100%;
   padding: 10px;
   background: #222;
+}
+
+@media (max-width: 480px) {
+  nav.horizontal-nav ul > li.extra-li {
+    display: none;
+  }
 }

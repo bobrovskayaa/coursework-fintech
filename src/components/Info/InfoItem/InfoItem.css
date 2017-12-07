@@ -31,3 +31,16 @@
   color: #000;
   text-decoration: none;
 }
+
+@media (max-width: 690px) {
+  .info-item {
+    display: inherit;
+    margin: 10px auto;
+    max-width: 500px;
+  }
+
+  .info-text {
+    height: 100%;
+  }
+}
+
