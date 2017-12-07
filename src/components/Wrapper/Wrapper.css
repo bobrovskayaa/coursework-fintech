@@ -70,5 +70,10 @@
   .wrapper-manual-header {
     text-indent: 0.5em;
     word-wrap: break-word;
+    font-size: 20px;
+  }
+
+  .wrapper-about-item {
+    padding: 20px;
   }
 }
