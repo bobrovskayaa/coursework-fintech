@@ -12,3 +12,17 @@
   border-bottom: 1px solid;
   text-decoration: none;
 }
+
+.manual-code {
+  word-wrap: break-word;
+}
+
+.manual-image {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .manual-image {
+    display: none;
+  }
+}

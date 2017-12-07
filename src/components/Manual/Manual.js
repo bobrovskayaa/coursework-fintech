@@ -31,13 +31,13 @@ export default ({ foo }) => (
           <br/>
             Можно непосредственно воспользоваться API:
           <br/>
-          <code>
+          <code className='manual-code'>
             {api_post_ex}
           </code>
           <br/>
             И получить ответ в виде:
           <br/>
-          <code>
+          <code className='manual-code'>
             {api_get_ex}
           </code>
           </li>
@@ -46,7 +46,7 @@ export default ({ foo }) => (
             <br />
             <br />
             <p style={{ textAlign: 'center' }}>
-              <img src='images/manual1.png' alt='screen of example' style={{ width: '100%' }}/>
+              <img src='images/manual1.png' alt='screen of example' className='manual-image'/>
             </p>
           </li>
         </ol>
@@ -56,7 +56,7 @@ export default ({ foo }) => (
           <br />
           <br />
           <p style={{ textAlign: 'center' }}>
-            <img src='images/manual2.png' alt='screen of example' style={{ width: '100%' }}/>
+            <img src='images/manual2.png' alt='screen of example' className='manual-image'/>
           </p>
         </Wrapper>
         <Wrapper header='Изменение .gitlab-ci.yml' wrpStyle='manual'>
