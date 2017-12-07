@@ -14,9 +14,9 @@ export default ({ funcChange }) => {
       </nav>
       <nav className="horizontal-nav right">
         <ul>
-          <li><Button text="About us" onClick={()=> funcChange('about')} btnStyle="nav-item"/></li>
-          <li><Button text="Manual" onClick={()=> funcChange('manual')} btnStyle="nav-item"/></li>
-          <li><Button text="Contact us" onClick={()=> funcChange('form')} btnStyle="nav-item"/></li>
+          <li className='extra-li'><Button text="About us" onClick={()=> funcChange('about')} btnStyle="nav-item"/></li>
+          <li className='extra-li'><Button text="Manual" onClick={()=> funcChange('manual')} btnStyle="nav-item"/></li>
+          <li className='extra-li'><Button text="Contact us" onClick={()=> funcChange('form')} btnStyle="nav-item"/></li>
           <li>
             <Link to='/coursework-fintech/build/login' className='nav-item'  style={{ float: 'right' }}>
               <Button text="Log in"/>

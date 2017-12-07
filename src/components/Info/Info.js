@@ -27,6 +27,11 @@ class Info extends Component {
         document.getElementById('box2').style.display = 'none';
       }
     }
+    if (window.screen.width <= 900) {
+      const element = document.getElementById(id);
+      element.scrollIntoView(true);
+      window.scrollBy(0,-80);
+    }
   };
 
   render() {
@@ -35,7 +40,7 @@ class Info extends Component {
         header="About us" 
         descr="For companies which develop software to find bugs in the earliest stages of development." 
         tag="about" wrpStyle='main'>
-          <div>
+          <div style={{ textAlign: 'center', verticalAlign: 'middle' }}>
             <InfoItem id='0' onClick={()=> this.openBox('box1')}/>
             <InfoItem id='1' onClick={()=> this.openBox('box2')}/>
             <InfoItem id='2' onClick={()=> this.openBox('box3')}/>

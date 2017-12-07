@@ -39,7 +39,7 @@ class Enter extends Component {
   render() {
     return (
       <div>
-        <div style={{ margin: '150px auto 80px' }}>
+        <div className='enter-wrapper'>
           <div className='enter-block'>
             <form className="enter-body">
               <FormField text="Email" color='white'

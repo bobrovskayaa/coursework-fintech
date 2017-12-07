@@ -1,6 +1,6 @@
 .wrapper-main-item {
   max-width: 1000px;
-  width: 100%;
+  width: 90%;
   overflow: hidden;
   margin: auto;
   text-align: center;
@@ -17,12 +17,14 @@
 }
 
 .wrapper-main-subtitle {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   font-size: 16px;
   margin: 30px auto;
 }
 
 .wrapper-about-item {
+  width: 90%;
   margin: 40px auto;
   padding: 40px;
   border: 1px solid;
@@ -62,4 +64,11 @@
   text-indent: 1.5em;
   font-size: 1.2em;
   line-height: 1.8em;
+}
+
+@media (max-width: 480px) {
+  .wrapper-manual-header {
+    text-indent: 0.5em;
+    word-wrap: break-word;
+  }
 }
