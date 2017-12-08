@@ -23,9 +23,7 @@ class Enter extends Component {
 
   handleSubmitLogIn(event) {
     event.preventDefault();
-    document.getElementById('loader').style.display = 'block';
     this.props.postLogin(this.state);
-    document.getElementById('loader').style.display = 'none';
   }
   
   handleLoginChange(event) {
@@ -45,10 +43,10 @@ class Enter extends Component {
               <FormField text="Email" color='white'
                 value={this.state.email}
                 onChange={this.handleLoginChange} />
-              <FormField text="Password" color='white'
+              <FormField text="Пароль" color='white'
                 value={this.state.password} 
                 onChange={this.handlePassChange} />
-              <Button text="Log in" btnStyle="banner-button" onClick={this.handleSubmitLogIn}/>
+              <Button text="Войти" btnStyle="banner-button" onClick={this.handleSubmitLogIn}/>
             </form>
           </div>
           <div className='enter-block'>
@@ -57,7 +55,6 @@ class Enter extends Component {
             </p>
             <textarea type="text" placeholder='Токен' id='token' value={this.props.token}
               className="form-input-white enter-input" readOnly="readonly" />
-            <p className='text-small' id='loader' style={{ display: 'none' }}>Loading&hellip;</p>
           </div>
         </div>
       </div> 

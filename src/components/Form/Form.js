@@ -8,7 +8,7 @@ import './Form.css';
 
 import {postForm} from '../../actions';
 
-const descr = "Have questions? Want to order? Please, feel free to contact us.";
+const descr = "Есть вопросы? Хотите заказать Sybil? Мы рады ответить на любые ваши вопросы";
 
 
 class Form extends Component {
@@ -26,16 +26,16 @@ class Form extends Component {
 
   handleChange(event) {
     console.log(event.target.value);
-    if (event.target.placeholder === "Name") {
+    if (event.target.placeholder === "Имя") {
       this.setState({name: event.target.value});
     }
     if (event.target.placeholder === "Email") {
       this.setState({email: event.target.value});
     }
-    if (event.target.placeholder === "Theme") {
+    if (event.target.placeholder === "Тема") {
       this.setState({theme: event.target.value});
     }
-    if (event.target.placeholder === "Message") {
+    if (event.target.placeholder === "Сообщение") {
       this.setState({message: event.target.value});
     }
   }
@@ -49,12 +49,12 @@ class Form extends Component {
     render() {
       return (
     <Wrapper
-      header="Contact us" descr={descr} tag="form" wrpStyle='main'>
+      header="Обратная связь" descr={descr} tag="form" wrpStyle='main'>
         <form className="form-body">
-          <FormField text="Name" color='black' onChange={this.handleChange}/>
+          <FormField text="Имя" color='black' onChange={this.handleChange}/>
           <FormField text="Email" color='black' onChange={this.handleChange}/>
-          <FormField text="Theme" color='black' onChange={this.handleChange}/>
-          <FormField isBig='1' text="Message" color='black' className='textarea-big' 
+          <FormField text="Тема" color='black' onChange={this.handleChange}/>
+          <FormField isBig='1' text="Сообщение" color='black' className='textarea-big' 
             onChange={this.handleChange}/>
           <Button text="Отправить" btnStyle="form-button" onClick={this.handleSubmitForm}/>
         </form>

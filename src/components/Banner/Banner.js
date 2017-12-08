@@ -12,7 +12,7 @@ export default ({ funcChange }) => (
       <div className="banner-text-small">
         Save your releases.
       </div>
-      <Button text="Contact us" onClick={()=> funcChange('form')} btnStyle="banner-button"/>
+      <Button text="Написать нам" onClick={()=> funcChange('form')} btnStyle="banner-button"/>
   </div>
 </div> 
 );

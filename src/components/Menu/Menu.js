@@ -9,17 +9,17 @@ export default ({ funcChange }) => {
     <div className="menu-row">
       <nav className="horizontal-nav left">
         <ul>
-          <li><Button text="Home" onClick={()=> funcChange('menu')} btnStyle="nav-item"/></li>
+          <li><Button text="Главная" onClick={()=> funcChange('menu')} btnStyle="nav-item"/></li>
         </ul>
       </nav>
       <nav className="horizontal-nav right">
         <ul>
-          <li className='extra-li'><Button text="About us" onClick={()=> funcChange('about')} btnStyle="nav-item"/></li>
-          <li className='extra-li'><Button text="Manual" onClick={()=> funcChange('manual')} btnStyle="nav-item"/></li>
-          <li className='extra-li'><Button text="Contact us" onClick={()=> funcChange('form')} btnStyle="nav-item"/></li>
+          <li className='extra-li'><Button text="О нас" onClick={()=> funcChange('about')} btnStyle="nav-item"/></li>
+          <li className='extra-li'><Button text="Инструкция" onClick={()=> funcChange('manual')} btnStyle="nav-item"/></li>
+          <li className='extra-li'><Button text="Обратная связь" onClick={()=> funcChange('form')} btnStyle="nav-item"/></li>
           <li>
             <Link to='/coursework-fintech/build/login' style={{ float: 'right' }}>
-              <Button btnStyle='nav-item' text="Log in"/>
+              <Button btnStyle='nav-item' text="Обновить токен"/>
             </Link>
           </li>
         </ul>

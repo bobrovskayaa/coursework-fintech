@@ -9,7 +9,7 @@ const api_get_ex = '{"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUz..."}';
 
 export default ({ foo }) => (
   <Wrapper
-    header="Manual" descr="This manual for users whom already have DP program" 
+    header="Инструкция" descr="Инструкция для установки и использования Sybil." 
     tag="manual" wrpStyle='main'>
       <div className='wrapper-about-item'>
         <Wrapper header='Основная последовательность' wrpStyle='manual'>
@@ -27,7 +27,7 @@ export default ({ foo }) => (
         </Wrapper>
         <Wrapper header='Получение токена' wrpStyle='manual'>
         <ol>
-          <li> Зарегистрироваться на сайте через страницу <Link to='/coursework-fintech/build//login' className='manual-link'>Log in</Link>
+          <li> Зарегистрироваться на сайте через страницу <Link to='/coursework-fintech/build/login' className='manual-link'>Войти</Link>
           <br/>
             Можно непосредственно воспользоваться API:
           <br/>
