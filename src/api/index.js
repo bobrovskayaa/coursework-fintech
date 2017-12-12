@@ -1,6 +1,6 @@
 
 export const postLoginApi = async (data) => {
-    const URL = 'http://defect-prediction-server.herokuapp.com/auth/login';
+    const URL = 'https://defect-prediction-server.herokuapp.com/auth/login';
     //console.log(JSON.stringify(data));
     return fetch(URL, {
         method: 'POST',
@@ -23,7 +23,7 @@ export const postLoginApi = async (data) => {
 }
 
 export const postFormApi = async (data) => {
-    const URL = 'http://defect-prediction-server.herokuapp.com/feedback/show';
+    const URL = 'https://defect-prediction-server.herokuapp.com/feedback/show';
     return fetch(URL, {
         method: 'POST',
         headers: { 'Content-Type': "application/json" },
